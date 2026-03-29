@@ -1,9 +1,9 @@
 #include <iostream>
-#include "car.h"
-#include "bike.h"
-#include "customer.h"
-#include "rental.h"
-#include "vehicle.h"
+#include "Car.h"
+#include "Bike.h"
+#include "Customer.h"
+#include "Rental.h"
+#include "Vehicle.h"
 
 using namespace std;
 
@@ -14,6 +14,7 @@ int main() {
     Bike bike;
     Customer cust;
     Rental rent;
+    Vehicle veh;
 
     // Setting vehicle data using encapsulation
     car.setData("Sedan", 2000);
