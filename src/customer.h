@@ -1,13 +1,20 @@
-#ifndef BIKE_H
-#define BIKE_H
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
 
-#include "Vehicle.h"
+#include <iostream>
+using namespace std;
 
-class Bike : public Vehicle {
+class Customer {
+private:
+    string name;
+
 public:
+    void input() {
+        cout << "Enter customer name: ";
+        cin >> name;
+    }
+
     void display() {
-        cout << "\n--- Bike Details ---\n";
-        Vehicle::display();
-        cout << "Type: Bike" << endl;
+        cout << "Customer: " << name << endl;
     }
 };
