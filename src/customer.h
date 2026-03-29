@@ -1,12 +1,13 @@
-#include <iostream>
-using namespace std;
+#ifndef BIKE_H
+#define BIKE_H
 
-class Customer {
+#include "Vehicle.h"
+
+class Bike : public Vehicle {
 public:
-    string name;
-
-    void input() {
-        cout << "Enter customer name: ";
-        cin >> name;
+    void display() {
+        cout << "\n--- Bike Details ---\n";
+        Vehicle::display();
+        cout << "Type: Bike" << endl;
     }
 };
